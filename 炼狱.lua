@@ -9,7 +9,7 @@ function OnEvent(event, arg)
   if lianyu then
     while IsMouseButtonPressed(1) do
       PressKey("minus") 
-      Sleep(math.random(90, 110))
+      Sleep(math.random(155, 175))
       ReleaseKey("minus")
       Sleep(math.random(15, 20))
     end
