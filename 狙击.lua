@@ -39,5 +39,18 @@ function OnEvent(event, arg)
        PressAndReleaseKey("1")
        end
    end
-  
+ 
+     if (event == "MOUSE_BUTTON_RELEASE" and arg == 5) then
+      PressKey("spacebar")
+      Sleep(25)
+      ReleaseKey("spacebar")
+      Sleep(595)
+      PressKey("spacebar")
+      Sleep(25)
+      ReleaseKey("spacebar")
+      Sleep(125)
+      PressKey("lctrl")
+      Sleep(125)
+      ReleaseKey("lctrl")
+     end
 end
