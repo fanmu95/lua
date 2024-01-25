@@ -8,12 +8,6 @@ function OnEvent(event, arg)
   if (event == "MOUSE_BUTTON_PRESSED" and arg == 4) then
     usb  = not usb 
     juji = not juji
-       PressKey("lctrl") 
-       Sleep(100)
-       PressKey("z")
-       Sleep(100) 
-       ReleaseKey("lctrl")
-       ReleaseKey("z")
   end
   
   if (event == "MOUSE_BUTTON_PRESSED" and arg == 2) then
@@ -32,16 +26,16 @@ function OnEvent(event, arg)
     end
   end
   
-   if (event == "MOUSE_BUTTON_PRESSED" and arg == 1) then
+   if (event == "MOUSE_BUTTON_RELEASE" and arg == 1) then
    if juji then
        ReleaseKey("equal")
-     Sleep(2)
+       Sleep(2)
        PressAndReleaseKey("minus")
        Sleep(2)
        MoveMouseWheel(-1)
        Sleep(math.random(140,150))
        MoveMouseWheel(1)
-        Sleep(30)
+       Sleep(30)
        PressAndReleaseKey("1")
        end
    end
