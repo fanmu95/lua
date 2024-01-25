@@ -1,15 +1,13 @@
 ClearLog()
 local lianyu = true
-
 EnablePrimaryMouseButtonEvents(true)
- 
 function OnEvent(event, arg)
  
   Sleep(1)
   if lianyu then
     while IsMouseButtonPressed(1) do
       PressKey("minus") 
-      Sleep(math.random(155, 175))
+      Sleep(math.random(150, 170))
       ReleaseKey("minus")
       Sleep(math.random(15, 20))
     end
