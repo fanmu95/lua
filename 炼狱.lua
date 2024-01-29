@@ -9,7 +9,7 @@ function OnEvent(event, arg)
       PressKey("minus") 
       Sleep(math.random(145, 170))
       ReleaseKey("minus")
-      Sleep(math.random(15, 20))
+      Sleep(math.random(20, 30))
     end
   end
   
@@ -41,8 +41,10 @@ function OnEvent(event, arg)
 
   if lianyu  then
     while IsMouseButtonPressed(4) do
-      PressAndReleaseKey("lctrl")
-      Sleep(math.random(100, 150))
+        PressKey("lctrl")
+        Sleep(math.random(35, 50))
+        ReleaseKey("lctrl")
+        Sleep(math.random(35, 50))
     end
   end
 end
