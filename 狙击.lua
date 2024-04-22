@@ -20,13 +20,13 @@ function OnEvent(event, arg)
   if usb then
     while IsMouseButtonPressed(1) do
       PressKey("minus") 
-      Sleep(math.random(30, 50))
+      Sleep(math.random(55， 80))
       ReleaseKey("minus")
       Sleep(math.random(20, 35))
     end
   end
   
-   if (event == "MOUSE_BUTTON_RELEASE" and arg == 1) then
+   if (event == "MOUSE_BUTTON_PRESSED" and arg == 1) then
    if juji then
        ReleaseKey("equal")
        Sleep(2)
