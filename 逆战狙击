@@ -1,0 +1,41 @@
+ClearLog()
+local juji = false
+
+EnablePrimaryMouseButtonEvents(true)
+ 
+function OnEvent(event, arg)
+
+  if (event == "MOUSE_BUTTON_PRESSED" and arg == 4) then
+    juji = not juji
+  end
+  
+  if (event == "MOUSE_BUTTON_PRESSED" and arg == 1) then
+    if juji then
+      PressAndReleaseMouseButton(1)
+      Sleep(math.random(2,8))
+       PressAndReleaseKey("3") 
+       Sleep(math.random(70,100))
+       PressAndReleaseKey("1") 
+       Sleep(10)
+       PressAndReleaseKey("1") 
+       end
+  end
+  
+    if (event == "MOUSE_BUTTON_PRESSED" and arg == 5) then
+    PressKey("w")
+    Sleep(15)     
+    PressKey("s")
+    Sleep(8)
+    PressKey("space")
+    Sleep(112)
+    PressKey("ctrl")
+    Sleep(184) 
+    ReleaseKey("ctrl") 
+    ReleaseKey("space")
+    Sleep(16) 
+    ReleaseKey("s")
+    Sleep(8)
+    ReleaseKey("w")
+    Sleep(8)    
+    end
+end
